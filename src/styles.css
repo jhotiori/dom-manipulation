@@ -1,0 +1,89 @@
+/*
+    global.css
+*/
+
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(#111, #222);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do formulário */
+.formulario {
+    background: #f0f0f0bb;
+    padding: 30px 40px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: rgb(0 0 0 / 50%) 0px 10px 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Cada campo do formulário */
+.formulario div {
+  margin-bottom: 20px;
+}
+
+/* Label estilizado */
+.formulario label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Inputs */
+.formulario input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* Efeito de foco nos inputs */
+.formulario input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Botões */
+.formulario button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover e foco no botão */
+.formulario button:hover,
+.formulario button:focus {
+  background-color: #0056b3;
+  outline: none;
+}
